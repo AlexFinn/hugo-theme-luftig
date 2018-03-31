@@ -1,6 +1,6 @@
 # Hugo theme based on [Slim theme](https://github.com/zhe/hugo-theme-slim)
 
-[Demo](https://ru.alxschwarz.com).
+![screenshot](https://github.com/AlexFinn/slim-alx/blob/master/images/screenshot.png)
 
 ## Installation
 
