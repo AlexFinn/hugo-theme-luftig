@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i&subset=cyrillic,cyrillic-ext');
 
-@font-face { font-family: 'body';                     src: url('woff/iAWriterQuattroS-Regular.woff') format('woff'); }
-@font-face { font-family: 'body'; font-style: italic; src: url('woff/iAWriterQuattroS-Italic.woff') format('woff'); }
-@font-face { font-family: 'body'; font-weight: 800;   src: url('woff/iAWriterQuattroS-Bold.woff') format('woff'); }
+@font-face { font-family: 'body'; font-display: fallback; src: url('fonts/IBMPlexSans-Regular.woff2') format('woff'); }
+@font-face { font-family: 'body'; font-style: italic; font-display: fallback; src: url('fonts/IBMPlexSans-Italic.woff2') format('woff'); }
+@font-face { font-family: 'body'; font-weight: 700; font-display: fallback; src: url('fonts/IBMPlexSans-Bold.woff2') format('woff'); }
 
-@font-face { font-family: 'mono';                     src: url('woff/iAWriterMonoS-Regular.woff') format('woff'); }
+@font-face { font-family: 'mono'; font-display: fallback; src: url('fonts/IBMPlexMono-Regular.woff2') format('woff'); }
 
 html {
   box-sizing: border-box; }
@@ -60,8 +59,8 @@ tbody tr:nth-child(odd) th {
 
 body {
   color: #222;
-  font: 16px/28px body, sans-serif;
-  letter-spacing: 0.01rem;
+  font: 17px/30px body, sans-serif;
+  /*letter-spacing: 0.02rem;*/
   text-rendering: optimizeLegibility;
   /*-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;*/
@@ -75,10 +74,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: 'Fira Sans', sans-serif; }
+  font-family: body, sans-serif; }
 
 h1 {
   font-size: 1.8rem; }
@@ -362,7 +361,7 @@ button,
           transition: all 0.2s;
   text-decoration: none; }
 
-.menu { font-family: body; width: 600px; margin: 0 0 0 auto; padding: 0 0 30px 0; vertical-align: top; text-align: right;}
+.menu { font-family: body; margin: 0 0 0 auto; padding: 0 0 30px 0; vertical-align: top; text-align: right;}
 .menu > li { list-style: none; display: inline-block; margin: 0 1.5em 0 0; vertical-align: top; }
 .menu__item, a.menu__item { color: hsl(215, 0%, 65%); border-color: transparent; display: inline-block;  text-decoration: none;  }
 .menu__item_selected, a.menu__item_selected, a.menu__item:hover { color: inherit; border-color: hsl(45,98%,77%); color: black; border-bottom: 2px solid hsl(45,0%,50%); }
