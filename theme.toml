@@ -1,4 +1,4 @@
-name = "slim-alx-extended"
+name = "hugo-theme-luftig"
 license = "MIT"
 licenselink = "https://github.com/zhe/hugo-theme-slim/blob/master/LICENSE.md"
 description = "A minimal theme for Hugo based on Slim theme."
@@ -9,4 +9,4 @@ min_version = 0.57
 
 [author]
     name = "Alexander Feller"
-    homepage = "http://ru.alxschwarz.com"
+    homepage = "https://ru.alxschwarz.com"

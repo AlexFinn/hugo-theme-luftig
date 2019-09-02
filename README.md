@@ -7,7 +7,7 @@
 ```
 mkdir themes
 cd themes
-git clone https://github.com/AlexFinn/slim-alx.git slim-alx
+git clone https://github.com/AlexFinn/hugo-theme-luftig.git hugo-theme-luftig
 ```
 
 See the [official docs](http://gohugo.io/themes/installing) for more information.
@@ -51,7 +51,7 @@ params:
 ## Build your site
 
 ```
-hugo server -t slim-alx
+hugo server -t hugo-theme-luftig
 ```
 
 
