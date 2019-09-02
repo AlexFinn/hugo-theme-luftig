@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
-  {{ template "partials/head.html" . }}
+  {{ partial "head.html" . }}
 </head>
 
 <body>
@@ -10,9 +10,11 @@
     {{ partial "header.html" . }}
     <div class="content">
       <div class="posts">
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }} {{ range $paginator.Pages }}
+        {{ $paginator := .Paginate (where .Pages "Type" "post") }} {{ range $paginator.Pages }}
         <div class="post">
-          <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <h2 class="post-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h2>
           <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
 		  {{ if .Params.tags }}
 			<span class="post-tags">
@@ -42,5 +44,4 @@
   {{ with .Site.Params.AnalyticsID }}{{ partial "analytics.html" . }}{{ end }}
 
 </body>
-
 </html>
