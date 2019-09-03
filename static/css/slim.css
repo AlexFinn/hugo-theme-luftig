@@ -185,11 +185,12 @@ button,
   margin: 2rem auto; }
 
 .site-title {
-  font-size: 1.5rem;
+  border: none;
+  float: left;
+  font-size: 1.6rem;
   font-weight: 600;
-  font-family: 'Fira Sans', sans-serif; }
+  font-family: 'Fira Code', sans-serif; }
   .site-title a {
-    border: none;
     color: #333; }
 
 .nav {
