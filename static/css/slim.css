@@ -16,7 +16,7 @@ body {
 a {
   color: #2980b9;
   text-decoration: none;
-  border-bottom: 1px solid #00000030;
+  border-bottom: 0.5px solid #00000030;
   color: #333;
   background: #fff;
   position: relative;
@@ -25,7 +25,7 @@ a {
 }
 a:hover, a:focus {
   text-decoration: none;
-  border-bottom: 3px solid #B9B9B9;
+  border-bottom: 3px solid #00baff;
 }
 
 img {
